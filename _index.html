@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiAi Travel and Booking</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <div class="logo">
+                <img src="pexels-alex-andrews-816608.jpg" alt="Logo">
+            </div>
+            <div class="name"><b>ShiAi</b></div>
+        </div>
+
+
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="Booking, tour and ...">
+
+
+            <p id="no-results"
+                style="display: none; text-align: center; font-weight: bold; color: red; margin-top: 10px;">
+                No results found.</p>
+
+        </div>
+
+        <div class="header-buttons">
+            <button class="btn home" onclick="home()">Home</button>
+            <button class="btn About-us" onclick="AboutUs()">About us</button>
+            <button class="btn Login" onclick = "Login()"> Login</button>
+            <button class="btn Sign-Up" onclick="SignUp()" title="First time?">Sign Up</button>
+        </div>
+    </header>
+    <div class="split-screen">
+        <div class="left-pane">
+            <h2>Explore the World</h2>
+            <p>Find and book amazing travel experiences, flights, and stays — all in one place.</p>
+            <p>Our dynamic team has in- depth knowledge of the colorful and vibrant states of India, the Far East, the
+                Middle East and European Cities and many more making sure our guests have an experience of a life time.
+
+            </p>
+            <button class="book-btn">✈️ Book Now</button>
+        </div>
+
+        <div class="right-pane">
+            <img src="travel-left.jpg" alt="Travel Destination">
+        </div>
+    </div>
+    
+
+    <div class="student-pass-note">
+        <strong>Student Pass</strong>
+        
+    </div>
+    <section class="section-container">
+        <h2 class="section-container">Top Destinations in India</h2>
+        <div class="container genre-container">
+
+            <div class="inside-card" data-id="Delhi">
+                <h3>New Delhi</h3>
+                <p>National capital with rich heritage.</p>
+                <div class="music-player" id="pop-player">
+                    <img src="delhi-pic.jpg" alt="delhi-pic">
+
+                </div>
+            </div>
+            <div class="inside-card" data-id="Rajgir">
+                <h3>Rajgir</h3>
+                <p>Capital of Indian Subcontinent first empire. History of more than 2500 years</p>
+                <div class="music-player" id="rajgir-player">
+                    <img src="rajgir-pic.jpg" alt="rajgir-pic">
+                </div>
+            </div>
+            <div class="inside-card" data-id="Sasaram">
+                <h3>Sasaram</h3>
+                <p>Natural epitome , wonders , waterfalls and untouched realm with impactful history.</p>
+                <div class="music-player" id="ssm-player">
+                    <img src="ssm-pic.jpg" alt="sasaram-pic">
+
+                </div>
+            </div>
+
+    </section>
+    <section class="section-container">
+        <h2 class="section-container">Top Destinations around Globe</h2>
+        <div class="container genre-container">
+
+            <div class="outside-card" data-id="Paris">
+                <h3>Paris</h3>
+                <p>City of lights and love.</p>
+                <div class="music-player" id="pop-player">
+                    <img src="paris-pic.jpg" alt="paris-pic">
+
+                </div>
+            </div>
+            <div class="outside-card" data-id="Singapore">
+                <h3>Singapore</h3>
+                <p>Skyscrapers city with lakes and mordernity.</p>
+                <div class="music-player" id="sing-player">
+                    <img src="singapore.pic.jpg" alt="Singapore-pic">
+                </div>
+            </div>
+            <div class="outside-card" data-id="Dubai">
+                <h3>Dubai</h3>
+                <p>Paradise in barren desert.most livable city in world.</p>
+                <div class="music-player" id="D-player">
+                    <img src="dubai-pic.jpg" alt="dubai-pic">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="vacation-types">
+        <h2>Types of Vacation</h2>
+        <div class="vacation-grid">
+            <div class="vacation-card">
+                <img src="beach-pics.jpg" alt="Beach Escape">
+                <h3>Beach Escape</h3>
+                <p>Relax by the waves, sunbathe, and enjoy tropical vibes.</p>
+            </div>
+            <div class="vacation-card">
+                <img src="mountain-pic.jpg" alt="Mountain Adventure">
+                <h3>Mountain Adventure</h3>
+                <p>Hike, camp, and discover breathtaking peaks and forests.</p>
+            </div>
+            <div class="vacation-card">
+                <img src="city-pic.jpg" alt="City Exploration">
+                <h3>City Exploration</h3>
+                <p>Discover architecture, nightlife, and urban experiences.</p>
+            </div>
+            <div class="vacation-card">
+                <img src="desert-pic.jpg" alt="Desert Safari">
+                <h3>Desert Safari</h3>
+                <p>Ride the dunes, enjoy sunsets, and experience desert life.</p>
+            </div>
+            <div class="vacation-card">
+                <img src="cruise-pic.jpg" alt="Cruise Voyage">
+                <h3>Cruise Voyage</h3>
+                <p>Sail across oceans with luxury, food, and sea breezes.</p>
+            </div>
+            <div class="vacation-card">
+                <img src="Wildlife-safari.jpg" alt="Cruise Voyage">
+                <h3>Wildlife Safari</h3>
+                <p>Explore jungles and national parks, spot exotic animals, and connect with nature</p>
+            </div>
+            <div class="vacation-card">
+                <img src="Snow-Gateway.jpg" alt="Cruise Voyage">
+                <h3>Snow Gateway</h3>
+                <p>Enjoy skiing, snowboarding, and cozy cabins in beautiful snowy landscapes.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    </section>
+    <h2></h2>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 ShiAi Travel and Booking. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.linkedin.com/in/shubham-singh-23978a214/">Linkedin</a> |
+                <a href="https://www.instagram.com/_the.shubham.singh_/">Instagram</a> |
+                <a href="https://github.com/Shubham-Sinh/Shubham-Sinh">GitHub</a> |
+                <a href="https://vercel.com/shubham-singhs-projects-2fb2f51b">vercel</a>
+            </p>
+        </div>
+
+        <script src="_functioning.js"></script>
+</body>
+
+</html>

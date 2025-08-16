@@ -1,0 +1,291 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: rgba(33, 21, 191, 0.523);
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #470564d8;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.split-screen {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-pane {
+    width: 50%;
+    background-color: #e0f7fa;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-pane h2 {
+    font-size: 40px;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.left-pane p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.book-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #023e8a;
+}
+
+.right-pane {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.right-pane img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-pane:hover {
+    cursor:zoom-in;
+    transform: scale(1.005);
+
+}
+.student-pass-note {
+    position: fixed;
+    top: 400px;
+
+    right: 10px;
+
+    background-color: #08b6dde0;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    transition: transform 0.3s ease;
+}
+
+
+.student-pass-note:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.section-container {
+    margin: 40px 20px;
+}
+
+
+.container {
+    display: flex;
+}
+
+.inside-card {
+    flex: 1;
+    /* All boxes take equal width */
+    max-width: 33%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.inside-card:hover {
+    background-color: chocolate;
+    border: 0.25rem solid rgba(7, 175, 83, 0.903);
+    border-end-start-radius: 80px 80px;
+    direction: rtl;
+    transform: scale(1.005);
+}
+
+.section-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #010a13;
+}
+
+.section-container h2:hover {
+    text-align: center;
+}
+
+.music-player {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* clips image if it overflows */
+}
+
+.music-player img {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.outside-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.outside-card:hover {
+    background-color: rgba(202, 12, 15, 0.536);
+    border: 0.25rem solid rgba(47, 126, 2, 0.771);
+    border-end-start-radius: 80px 80px;
+}
+
+.vacation-types {
+    text-align: center;
+    padding: 4em 1em;
+    background-color: #f9f9f9;
+}
+
+.vacation-types h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.vacation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2em;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.vacation-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.vacation-card:hover {
+    transform: translateY(-5px);
+}
+
+.vacation-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.vacation-card h3 {
+    margin: 1em 0 0.5em;
+    color: #222;
+}
+
+.vacation-card p {
+    padding: 0 1em 1.5em;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.site-footer {
+    background-color: darkslategrey;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Highlight animation for footer links */
+.highlight {
+    background-color: yellow;
+    color: black !important;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
